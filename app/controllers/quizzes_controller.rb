@@ -46,4 +46,8 @@ class QuizzesController < ApplicationController
 
     redirect_to "/quizzes"
   end
+  
+  def main
+  end
+  
 end

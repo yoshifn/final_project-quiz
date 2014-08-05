@@ -85,6 +85,8 @@ Rails.application.routes.draw do
 
   # DELETE
   get '/quizzes/:id/destroy' => 'quizzes#destroy'
+  
+  get '/main' => 'quizzes#main'
   #------------------------------
 
   # Routes for the Question resource:
