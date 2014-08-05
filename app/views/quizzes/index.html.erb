@@ -1,0 +1,29 @@
+<h1>Quizzes</h1>
+
+<p><a href="/new_quiz">Add a New Quiz</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Answer</th>
+      <th>Score</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @quizzes.each do |quiz| %>
+    <tr>
+          <td><%= quiz.answer %></td>
+          <td><%= quiz.score_id %></td>
+          <td><a href="/quizzes/<%= quiz.id %>">Show</a>
+        </td>
+      <td><a href="/quizzes/<%= quiz.id %>/edit">Edit</a></td>
+      <td><a href="/quizzes/<%= quiz.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

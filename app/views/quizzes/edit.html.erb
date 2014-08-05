@@ -1,0 +1,17 @@
+<h1>Editing Quiz #<%= @quiz.id %></h1>
+
+<form action="/quizzes/<%= @quiz.id %>/update">
+  <div>
+    <label for="answer">answer</label><br />
+    <input id="answer" name="answer" value="<%= @quiz.answer  %>" type="text" />
+  </div>
+  <div>
+    <label for="score_id">score_id</label><br />
+    <input id="score_id" name="score_id" value="<%= @quiz.score_id  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

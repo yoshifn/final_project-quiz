@@ -1,0 +1,17 @@
+<h1>Oneword #<%= @oneword.id %></h1>
+
+<div>
+  <strong>Answer</strong>:<br />
+  <p><%= @oneword.answer %></p>
+</div>
+<div>
+  <strong>Content</strong>:<br />
+  <p><%= @oneword.content %></p>
+</div>
+<div>
+  <strong>Score</strong>:<br />
+  <p><%= @oneword.score %></p>
+</div>
+
+<a href="/onewords/<%= @oneword.id %>/edit">Edit</a> |
+<a href="/onewords/<%= @oneword.id %>/destroy">Destroy</a>

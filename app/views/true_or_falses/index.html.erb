@@ -1,0 +1,27 @@
+<h1>True or falses</h1>
+
+<p><a href="/new_true_or_false">Add a New True Or False</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Answer</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @true_or_falses.each do |true_or_false| %>
+    <tr>
+          <td><%= true_or_false.answer %></td>
+          <td><a href="/true_or_falses/<%= true_or_false.id %>">Show</a>
+        </td>
+      <td><a href="/true_or_falses/<%= true_or_false.id %>/edit">Edit</a></td>
+      <td><a href="/true_or_falses/<%= true_or_false.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

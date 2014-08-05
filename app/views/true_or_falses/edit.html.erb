@@ -1,0 +1,13 @@
+<h1>Editing True Or False #<%= @true_or_false.id %></h1>
+
+<form action="/true_or_falses/<%= @true_or_false.id %>/update">
+  <div>
+    <label for="answer">answer</label><br />
+    <input id="answer" name="answer" value="<%= @true_or_false.answer  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

@@ -1,0 +1,31 @@
+<h1>Onewords</h1>
+
+<p><a href="/new_oneword">Add a New Oneword</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Answer</th>
+      <th>Content</th>
+      <th>Score</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @onewords.each do |oneword| %>
+    <tr>
+          <td><%= oneword.answer %></td>
+          <td><%= oneword.content %></td>
+          <td><%= oneword.score %></td>
+          <td><a href="/onewords/<%= oneword.id %>">Show</a>
+        </td>
+      <td><a href="/onewords/<%= oneword.id %>/edit">Edit</a></td>
+      <td><a href="/onewords/<%= oneword.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

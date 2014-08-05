@@ -1,0 +1,31 @@
+<h1>Truefalses</h1>
+
+<p><a href="/new_truefalse">Add a New Truefalse</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Answer</th>
+      <th>Content</th>
+      <th>Score</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @truefalses.each do |truefalse| %>
+    <tr>
+          <td><%= truefalse.answer %></td>
+          <td><%= truefalse.content %></td>
+          <td><%= truefalse.score %></td>
+          <td><a href="/truefalses/<%= truefalse.id %>">Show</a>
+        </td>
+      <td><a href="/truefalses/<%= truefalse.id %>/edit">Edit</a></td>
+      <td><a href="/truefalses/<%= truefalse.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

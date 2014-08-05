@@ -1,0 +1,21 @@
+<h1>Editing Truefalse #<%= @truefalse.id %></h1>
+
+<form action="/truefalses/<%= @truefalse.id %>/update">
+  <div>
+    <label for="answer">answer</label><br />
+    <input id="answer" name="answer" value="<%= @truefalse.answer  %>" type="text" />
+  </div>
+  <div>
+    <label for="content">content</label><br />
+    <input id="content" name="content" value="<%= @truefalse.content  %>" type="text" />
+  </div>
+  <div>
+    <label for="score">score</label><br />
+    <input id="score" name="score" value="<%= @truefalse.score  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

@@ -1,0 +1,11 @@
+<h1>Welcome, <%= session['username'] %></h1>
+
+<h1>Please login</h1>
+<form action="/sign_in">
+  <input type ="text" placeholder= "username goes here" name="username">
+  <input type ="submit">
+  <label for="password">Password:</label>
+  <input id="password" type="password" placeholder="your password here" name="password">
+</form>
+<button><a href="/new_user">New Account</a></button>
+<button><a href ="/sign_out">Sign Out</a></button>

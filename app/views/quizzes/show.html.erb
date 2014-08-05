@@ -1,0 +1,13 @@
+<h1>Quiz #<%= @quiz.id %></h1>
+
+<div>
+  <strong>Answer</strong>:<br />
+  <p><%= @quiz.answer %></p>
+</div>
+<div>
+  <strong>Score</strong>:<br />
+  <p><%= @quiz.score_id %></p>
+</div>
+
+<a href="/quizzes/<%= @quiz.id %>/edit">Edit</a> |
+<a href="/quizzes/<%= @quiz.id %>/destroy">Destroy</a>

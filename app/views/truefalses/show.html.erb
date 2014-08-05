@@ -1,0 +1,17 @@
+<h1>Truefalse #<%= @truefalse.id %></h1>
+
+<div>
+  <strong>Answer</strong>:<br />
+  <p><%= @truefalse.answer %></p>
+</div>
+<div>
+  <strong>Content</strong>:<br />
+  <p><%= @truefalse.content %></p>
+</div>
+<div>
+  <strong>Score</strong>:<br />
+  <p><%= @truefalse.score %></p>
+</div>
+
+<a href="/truefalses/<%= @truefalse.id %>/edit">Edit</a> |
+<a href="/truefalses/<%= @truefalse.id %>/destroy">Destroy</a>

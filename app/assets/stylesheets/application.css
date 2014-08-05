@@ -1,0 +1,40 @@
+.armenia {
+  color: green;
+  font-weight: bold;
+  font-size: 200%
+}
+.bahai {
+  color: red;
+  font-weight: bold;
+  font-size: 200%
+}
+.palm {
+  color: blue;
+  font-weight: bold;
+  font-size: 200%
+}
+.bricks {
+  color: orange;
+  font-weight: bold;
+  font-size: 200%
+}
+.armenia-2 {
+  color: green;
+  font-weight: bold;
+}
+.bahai-2 {
+  color: red;
+  font-weight: bold;
+}
+.palm-2 {
+  color: blue;
+  font-weight: bold;
+}
+.bricks-2 {
+  color: orange;
+  font-weight: bold;
+}
+* {
+   background-color: black;
+   color: white;
+}

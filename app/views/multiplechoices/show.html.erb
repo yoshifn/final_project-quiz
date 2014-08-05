@@ -1,0 +1,17 @@
+<h1>Multiplechoice #<%= @multiplechoice.id %></h1>
+
+<div>
+  <strong>Answer</strong>:<br />
+  <p><%= @multiplechoice.answer %></p>
+</div>
+<div>
+  <strong>Content</strong>:<br />
+  <p><%= @multiplechoice.content %></p>
+</div>
+<div>
+  <strong>Score</strong>:<br />
+  <p><%= @multiplechoice.score %></p>
+</div>
+
+<a href="/multiplechoices/<%= @multiplechoice.id %>/edit">Edit</a> |
+<a href="/multiplechoices/<%= @multiplechoice.id %>/destroy">Destroy</a>

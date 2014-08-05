@@ -1,0 +1,21 @@
+<h1>Editing Oneword #<%= @oneword.id %></h1>
+
+<form action="/onewords/<%= @oneword.id %>/update">
+  <div>
+    <label for="answer">answer</label><br />
+    <input id="answer" name="answer" value="<%= @oneword.answer  %>" type="text" />
+  </div>
+  <div>
+    <label for="content">content</label><br />
+    <input id="content" name="content" value="<%= @oneword.content  %>" type="text" />
+  </div>
+  <div>
+    <label for="score">score</label><br />
+    <input id="score" name="score" value="<%= @oneword.score  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

@@ -1,0 +1,31 @@
+<h1>Multiplechoices</h1>
+
+<p><a href="/new_multiplechoice">Add a New Multiplechoice</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Answer</th>
+      <th>Content</th>
+      <th>Score</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @multiplechoices.each do |multiplechoice| %>
+    <tr>
+          <td><%= multiplechoice.answer %></td>
+          <td><%= multiplechoice.content %></td>
+          <td><%= multiplechoice.score %></td>
+          <td><a href="/multiplechoices/<%= multiplechoice.id %>">Show</a>
+        </td>
+      <td><a href="/multiplechoices/<%= multiplechoice.id %>/edit">Edit</a></td>
+      <td><a href="/multiplechoices/<%= multiplechoice.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

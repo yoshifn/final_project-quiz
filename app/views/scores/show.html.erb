@@ -1,0 +1,17 @@
+<h1>Score #<%= @score.id %></h1>
+
+<div>
+  <strong>Score</strong>:<br />
+  <p><%= @score.score %></p>
+</div>
+<div>
+  <strong>Quiz</strong>:<br />
+  <p><%= @score.quiz_id %></p>
+</div>
+<div>
+  <strong>User</strong>:<br />
+  <p><%= @score.user_id %></p>
+</div>
+
+<a href="/scores/<%= @score.id %>/edit">Edit</a> |
+<a href="/scores/<%= @score.id %>/destroy">Destroy</a>
