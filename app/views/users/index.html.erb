@@ -22,12 +22,12 @@
           <td><%= user.email %></td>
           <td><%= user.bio %></td>
           <td><%= user.score %></td>
-          <td><a href="/users/<%= user.id %>">Show</a>
-        </td>
-      <td><a href="/users/<%= user.id %>/edit">Edit</a></td>
-      <td><a href="/users/<%= user.id %>/destroy">Destroy</a></td>
+      <% if session['username'] %>
+        <td><a href="/users/<%= user.id %>">Show</a></td>
+        <td><a href="/users/<%= user.id %>/edit">Edit</a></td>
+        <td><a href="/users/<%= user.id %>/destroy">Destroy</a></td>
+      <% end %>
     </tr>
   <% end %>
   </tbody>
 </table>
-

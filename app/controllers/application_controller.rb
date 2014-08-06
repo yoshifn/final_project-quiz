@@ -6,5 +6,11 @@ class ApplicationController < ActionController::Base
   
   def home
   end
-  
+   def login_required
+     user = User.find_by(name: session['username'])
+    if user.blank?
+      redirect_to('/')
+    end
+  end
+
 end
