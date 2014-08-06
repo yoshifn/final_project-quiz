@@ -50,4 +50,11 @@ class QuizzesController < ApplicationController
   def main
   end
   
+  def grade
+    if params['q1'] = "b"
+      @score = @score + 1   
+   else
+      @score = @score + 0
+    end
+   end
 end
