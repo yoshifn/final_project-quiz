@@ -144,4 +144,6 @@ Rails.application.routes.draw do
   get '/sign_in' => 'login#sign_in'
   get '/sign_out' => 'login#sign_out'
   get '/grade' => 'quizzes#grade'
+  get '/bahai' => 'quizzes#bahai'
+  get '/grade_bahai' => 'quizzes#grade_bahai'
 end
