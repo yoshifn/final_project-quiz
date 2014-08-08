@@ -50,6 +50,9 @@ class QuizzesController < ApplicationController
   def main
   end
   
+  def divination
+  end
+  
   def bahai
   end
   
@@ -151,11 +154,11 @@ class QuizzesController < ApplicationController
     if params['q30'] == "Nepal"
       @score = @score + 3
   end                
-    @user.score = @score 
+    @user.score = @score
     @user.save
   end
   
-  def bahai_grade
+  def grade_bahai
     @user = User.find_by_name(session['username'])
     @score = 0
     if params['q1'] == "a"
@@ -191,44 +194,45 @@ class QuizzesController < ApplicationController
     if params['q11'] == "a"
       @score = @score + 2 
     end
-    if params['q12'] == "c"
+    if params['q12'] == "d"
       @score = @score + 2 
     end
-    if params['q13'] == "a"
+    if params['q13'] == "d"
       @score = @score + 2
     end
-    if params['q14'] == "d"
+    if params['q14'] == "b"
       @score = @score + 2
     end
-   if params['q15'] == "d"
+   if params['q15'] == "a"
       @score = @score + 2
     end 
-   if params['q16'] == "b"
+   if params['q16'] == "c"
       @score = @score + 2
     end       
-   if params['q17'] == "c"
+   if params['q17'] == "b"
       @score = @score + 2
     end      
-   if params['q18'] == "d"
+   if params['q18'] == "a"
       @score = @score + 2
     end           
    if params['q19'] == "b"
       @score = @score + 2
     end                 
-   if params['q20'] == "a"
+   if params['q20'] == "c"
       @score = @score + 2
-        if params['q21'] == "12"
+        
+   if params['q21'] == "12"
      @score = @score + 3
     end   
     if params['q22'] == "9"
       @score = @score + 3
    end
-    if params['q23'] == "November"
+     if params['q23'] == "November"
       @score = @score + 3
    end
     if params['q24'] == "Zionism"
       @score = @score + 3
-    elsif params ['q24'] == "Zionists"
+    elsif params['q24'] == "Zionists"
       @score = @score + 3
    end
     if params['q25'] == "85"
@@ -253,8 +257,114 @@ class QuizzesController < ApplicationController
     elsif params['q30'] == "Alaska"
       @score = @score + 3
   end                
-    end           
-    @user.score = @score 
+    @user.score = @score
     @user.save
+   end
   end
+  
+  def grade_fortune
+    @user = User.find_by_name(session['username'])
+    @score = 0
+    if params['q1'] == "a"
+      @score = @score + 1   
+    end
+    if params['q2'] == "a"
+      @score = @score + 1   
+    end
+    if params['q3'] == "a"
+      @score = @score + 1   
+    end
+    if params['q4'] == "d"
+      @score = @score + 1   
+    end
+    if params['q5'] == "a"
+      @score = @score + 1   
+    end
+    if params['q6'] == "b"
+      @score = @score + 1   
+    end
+    if params['q7'] == "a"
+      @score = @score + 1   
+    end
+    if params['q8'] == "a"
+      @score = @score + 1   
+    end
+    if params['q9'] == "b"
+      @score = @score + 1   
+    end
+    if params['q10'] == "a"
+      @score = @score + 1  
+    end
+    if params['q11'] == "b"
+      @score = @score + 2 
+    end
+    if params['q12'] == "a"
+      @score = @score + 2 
+    end
+    if params['q13'] == "c"
+      @score = @score + 2
+    end
+    if params['q14'] == "a" #stopped here
+      @score = @score + 2
+    end
+   if params['q15'] == "a"
+      @score = @score + 2
+    end 
+   if params['q16'] == "c"
+      @score = @score + 2
+    end       
+   if params['q17'] == "b"
+      @score = @score + 2
+    end      
+   if params['q18'] == "a"
+      @score = @score + 2
+    end           
+   if params['q19'] == "b"
+      @score = @score + 2
+    end                 
+   if params['q20'] == "c"
+      @score = @score + 2
+        
+   if params['q21'] == "12"
+     @score = @score + 3
+    end   
+    if params['q22'] == "9"
+      @score = @score + 3
+   end
+     if params['q23'] == "November"
+      @score = @score + 3
+   end
+    if params['q24'] == "Zionism"
+      @score = @score + 3
+    elsif params['q24'] == "Zionists"
+      @score = @score + 3
+   end
+    if params['q25'] == "85"
+      @score = @score + 3
+  end
+    if params['q26'] == "14"
+      @score = @score + 3
+  end
+    if params['q27'] == "Persia"
+      @score = @score + 3
+    elsif params['q27'] == "Iran"
+      @score = @score + 3
+  end    
+    if params['q28'] == "Bahá'u'lláh"
+      @score = @score + 3
+  end    
+    if params['q29'] == "1918"
+      @score = @score + 3
+  end        
+    if params['q30'] == "Hawaii"
+      @score = @score + 3
+    elsif params['q30'] == "Alaska"
+      @score = @score + 3
+  end                
+    @user.score = @score
+    @user.save
+   end
+  end
+
+  
 end
