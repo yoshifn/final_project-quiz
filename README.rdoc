@@ -1,5 +1,5 @@
 == README
-
+This app is a quiz about stuff no one knows about. It can be used to make bets, have fun, or humble people that think they know everythings.
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
