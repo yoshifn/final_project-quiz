@@ -304,67 +304,161 @@ class QuizzesController < ApplicationController
     if params['q13'] == "c"
       @score = @score + 2
     end
-    if params['q14'] == "a" #stopped here
+    if params['q14'] == "a" 
       @score = @score + 2
     end
-   if params['q15'] == "a"
+    if params['q15'] == "d"
       @score = @score + 2
     end 
-   if params['q16'] == "c"
+   if params['q16'] == "b"
       @score = @score + 2
     end       
-   if params['q17'] == "b"
+    if params['q17'] == "d"
       @score = @score + 2
     end      
-   if params['q18'] == "a"
+   if params['q18'] == "c"
       @score = @score + 2
     end           
-   if params['q19'] == "b"
+   if params['q19'] == "a"
       @score = @score + 2
     end                 
-   if params['q20'] == "c"
+   if params['q20'] == "b"
       @score = @score + 2
         
-   if params['q21'] == "12"
+     if params['q21'] == "Rods"
      @score = @score + 3
     end   
-    if params['q22'] == "9"
+    if params['q22'] == "Sycomancy"
       @score = @score + 3
    end
-     if params['q23'] == "November"
+     if params['q23'] == "Dicevination"
       @score = @score + 3
    end
-    if params['q24'] == "Zionism"
-      @score = @score + 3
-    elsif params['q24'] == "Zionists"
+     if params['q24'] == "Pearls"
       @score = @score + 3
    end
-    if params['q25'] == "85"
+    if params['q25'] == "Astrology"
       @score = @score + 3
   end
-    if params['q26'] == "14"
+     if params['q26'] == "Death"
       @score = @score + 3
   end
-    if params['q27'] == "Persia"
-      @score = @score + 3
-    elsif params['q27'] == "Iran"
+     if params['q27'] == "Dead"
       @score = @score + 3
   end    
-    if params['q28'] == "Bahá'u'lláh"
+    if params['q28'] == "Fool"
       @score = @score + 3
   end    
-    if params['q29'] == "1918"
+     if params['q29'] == "Strength"
       @score = @score + 3
   end        
-    if params['q30'] == "Hawaii"
+     if params['q30'] == "Reflective"
       @score = @score + 3
-    elsif params['q30'] == "Alaska"
+    elsif params['q30'] == "Mirror"
       @score = @score + 3
   end                
     @user.score = @score
     @user.save
    end
   end
-
+  def grade_bricks
+    @user = User.find_by_name(session['username'])
+    @score = 0
+    if params['q1'] == "a"
+      @score = @score + 1   
+    end
+    if params['q2'] == "a"
+      @score = @score + 1   
+    end
+    if params['q3'] == "a"
+      @score = @score + 1   
+    end
+    if params['q4'] == "d"
+      @score = @score + 1   
+    end
+    if params['q5'] == "a"
+      @score = @score + 1   
+    end
+    if params['q6'] == "b"
+      @score = @score + 1   
+    end
+    if params['q7'] == "a"
+      @score = @score + 1   
+    end
+    if params['q8'] == "a"
+      @score = @score + 1   
+    end
+    if params['q9'] == "b"
+      @score = @score + 1   
+    end
+    if params['q10'] == "a"
+      @score = @score + 1  
+    end
+    if params['q11'] == "b"
+      @score = @score + 2 
+    end
+    if params['q12'] == "a"
+      @score = @score + 2 
+    end
+    if params['q13'] == "c"
+      @score = @score + 2
+    end
+    if params['q14'] == "a" 
+      @score = @score + 2
+    end
+    if params['q15'] == "d"
+      @score = @score + 2
+    end 
+   if params['q16'] == "b"
+      @score = @score + 2
+    end       
+    if params['q17'] == "d"
+      @score = @score + 2
+    end      
+   if params['q18'] == "c"
+      @score = @score + 2
+    end           
+   if params['q19'] == "a"
+      @score = @score + 2
+    end                 
+   if params['q20'] == "b"
+      @score = @score + 2
+        
+     if params['q21'] == "Rods"
+     @score = @score + 3
+    end   
+    if params['q22'] == "Sycomancy"
+      @score = @score + 3
+   end
+     if params['q23'] == "Dicevination"
+      @score = @score + 3
+   end
+     if params['q24'] == "Pearls"
+      @score = @score + 3
+   end
+    if params['q25'] == "Astrology"
+      @score = @score + 3
+  end
+     if params['q26'] == "Death"
+      @score = @score + 3
+  end
+     if params['q27'] == "Dead"
+      @score = @score + 3
+  end    
+    if params['q28'] == "Fool"
+      @score = @score + 3
+  end    
+     if params['q29'] == "Strength"
+      @score = @score + 3
+  end        
+     if params['q30'] == "Reflective"
+      @score = @score + 3
+    elsif params['q30'] == "Mirror"
+      @score = @score + 3
+  end                
+    @user.score = @score
+    @user.save
+   end
+  end
   
 end

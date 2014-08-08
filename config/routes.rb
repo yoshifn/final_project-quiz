@@ -146,4 +146,8 @@ Rails.application.routes.draw do
   get '/grade' => 'quizzes#grade'
   get '/bahai' => 'quizzes#bahai'
   get '/grade_bahai' => 'quizzes#grade_bahai'
+  get '/divination' => 'quizzes#divination'
+  get '/grade_fortune' => 'quizzes#grade_fortune'
+  get '/bricks' => 'quizzes#bricks'
+  get '/grade_bricks' => 'quizzes#grade_bricks'
 end
