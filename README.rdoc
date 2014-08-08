@@ -3,6 +3,10 @@ This app is a quiz about stuff no one knows about. It can be used to make bets, 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+- Someone wants to take a quiz on a subject
+- Someone wants to see how knowledgeable they are on a subject
+- Someone wants to see their and others scores
+
 Things you may want to cover:
 
 * Ruby version
